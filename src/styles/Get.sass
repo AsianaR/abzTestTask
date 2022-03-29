@@ -1,0 +1,69 @@
+@import './variables.sass';
+
+.get-block
+    
+    h1
+        text-align: center
+        margin:
+            top: 140px
+            bottom: 50px
+    .button
+        margin:
+            top: 50px
+            bottom: 140px
+.card
+    width: 328px
+    height: 254px
+    background: $white
+    padding: 20px
+    margin: 10px auto
+
+    p
+        margin: 0 auto
+        text-align: center
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: pre
+
+
+    &__image
+        width: 70px
+        height: 70px
+        border-radius: 50%
+    
+    &__name
+        padding: 
+            top: 20px
+            bottom: 20px
+        
+    
+    &__text
+        margin-top: 20px
+
+.container__get
+    margin: 0 auto
+    width: 328px
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    text-align: center
+
+@media screen and ( min-width: 768px )
+    .container__get
+        width: 704px
+    .card
+        width: 344px
+  
+@media screen and ( min-width: 1024px )
+    .container__get
+        width: 904px
+    .card
+        width: 282px
+
+
+@media screen and ( min-width: 2560px )
+    .container__get
+        width: 1168px
+    .card
+        width: 370px
+    
